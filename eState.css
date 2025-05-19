@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.home_container {
+    position: relative;
+
+}
+.building img{
+    height: 150vh;
+    width: 100%;
+    filter:brightness(1.5);
+}
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: rgba(248, 246, 246, 0.98);
+    padding: 15px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .nav_left ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav .nav_left li a {
+    text-decoration: none;
+    color: rgb(40, 30, 30);
+}
+.nav_mid a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(40, 30, 30);
+}
+.nav_right button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(63, 50, 50);
+    color: rgb(237, 214, 214);
+    border: none;
+    cursor: pointer;
+}
+.social_logo {
+    display: flex;
+    gap: 10px;
+}
+.nav_right a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(63, 50, 50);
+    padding: 10px 2px 10px 15px;
+}
+.nav_right img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.building_text{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.merienda h1 {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: rgb(63, 50, 50);
+    font-size: 40px;
+}
+.building_text span {
+    font-family: DM Serif;
+    font-size: 100px;;
+}
+.building_text p {
+    font-family: DM Serif;
+    color: rgb(46, 36, 36);
+    padding: 50px 0px 20px 0px;
+}
+.building_text button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: rgb(63, 50, 50);
+    color: rgb(237, 214, 214);
+    border: none;
+    cursor: pointer;
+}
+/* home page end */
+
+/* about page start */
+.about_container {
+    background-color: rgba(248, 246, 246, 0.98);
+    padding: 70px;
+}
+.about_container span {
+    font-size: 20px;
+    padding: 30px;
+    color: rgb(63, 50, 50);
+}
+.about_container p {
+    font-size: 50px;
+    padding: 30px;
+    color: rgb(63, 50, 50);
+    font-family:  'Lora', serif;
+}
+.about_container p span {
+    font-family: cursive;
+    font-size: 40px;
+}
+.img_class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_img1 {
+    height: 500px; 
+    width: 350px;
+    padding: 50px;
+    position: relative;
+    animation: aboutImg1 3s ease forwards;
+}
+@keyframes aboutImg1 {
+    0% {left: -200px;}
+    100% {left: 0px;}
+}
+.about_img2 {
+    padding: 50px;
+    height: 400px;
+    width: 350px; 
+    position: relative;
+    animation: aboutImg2 4s ease forwards;
+}
+@keyframes aboutImg2 {
+  0% { left: 200px; }
+  100% { left: 0px; }
+}
+/* About page end */
+
+/* The building page start */
+.the_building{
+    padding: 100px 100px 50px 100px;
+    background-color:  #baa783;
+}
+.the_building span{
+    font-size: 20px;
+    color: rgb(46, 36, 36);
+}
+.the_building p{
+    font-size: 50px;
+    color: rgb(46, 36, 36);
+    padding: 30px 0px;
+    font-family: DM Serif;
+}
+.the_building p span{
+    font-size: 50px;
+    color: rgb(46, 36, 36);
+    padding: 30px 0px;
+    font-family: cursive;
+}
+.building_img {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:  #baa783;
+}
+.building_img3 {
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.building_img4 {
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.Gardenia {
+    background-color:  #baa783;
+    color: rgb(46, 36, 36);
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.Gardenia h1{
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+.Gardenia p {
+    font-size: 16px;
+}
+.Gardenia ul {
+    list-style: none;
+}
+.Gardenia ul li {
+    padding: 0px 10px 10px 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.Gardenia ul li i {
+    margin-right: 10px; 
+    font-size: 18px;
+}
+.btn_group {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.Gardenia .btnA {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(63, 50, 50);
+    color: rgb(237, 214, 214);
+}
+.Gardenia .btnB {
+    background-color:  #baa783;
+    color: rgb(46, 36, 36);
+    border: 1px solid rgb(63, 50, 50);
+    padding: 10px 22px;
+    font-size: 18px;
+}
+/* building-gardenia end */
+
+/* ocean start */
+.ocean_img {
+    padding: 100px 100px 0px 100px;
+    background-color:  #66553a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 90px;
+}
+.ocean_img5 {
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.ocean_img6 {
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.ocean {
+    background-color: #66553a;
+    color: white;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.ocean h1{
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+.ocean p {
+    font-size: 16px;
+}
+.ocean ul {
+    list-style: none;
+}
+.ocean ul li {
+    padding: 0px 10px 10px 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.ocean ul li i {
+    margin-right: 10px; 
+    font-size: 18px;
+}
+.ocean .btn_grp {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.ocean .btnC {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(46, 36, 36);
+    background-color: white;
+    color: rgb(46, 36, 36);
+
+}
+.ocean .btnD {
+    background-color:  #baa783;
+    color: rgb(46, 36, 36);
+    border: 1px solid rgb(63, 50, 50);
+    padding: 10px 22px;
+    font-size: 18px;
+}
+/* ocean end */
+
+/* sky start */
+.sky_img {
+    padding: 100px 100px 0px 100px;
+    background-color: #3d2a1e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 90px;
+}
+.sky_img7{
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.sky_img8 {
+    padding: 10px;
+    height: 700px;
+    width: 450px; 
+    position: relative;
+}
+.sky {
+    background-color: #3d2a1e;
+    color:  #baa783 ;
+    padding: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.sky h1{
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+.sky p {
+    font-size: 16px;
+}
+.sky ul {
+    list-style: none;
+}
+.sky ul li {
+    padding: 0px 10px 10px 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+.sky ul li i {
+    margin-right: 10px; 
+    font-size: 18px;
+}
+.sky .btn_grp {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.sky .btnE {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid  #baa783;
+    background-color:  #baa783;
+    color: rgb(46, 36, 36);
+}
+.sky .btnF {
+    background-color: #3d2a1e;
+    color: #baa783;
+    border: 1px solid  #baa783;
+    padding: 10px 22px;
+    font-size: 18px;
+}
+/* ocean end */
+.own_story {
+    background-color: rgba(248, 246, 246, 0.98);
+    color: rgb(63, 50, 50);
+    padding: 100px ;
+}
+.story_img1 {
+    padding-bottom: 50px;
+    position: relative;
+    animation: storyImg1 3s ease forwards;
+}
+@keyframes storyImg1 {
+    0% {left: -200px;}
+    100% {left: 0px;}
+}
+.story_text p{
+    font-family: 'Lora', serif;
+    font-size: 50px;
+}   
+.story_text p span {
+    font-family: 'Dancing Script', cursive;
+}
+.story_img2 {
+    position: relative;
+    animation: storyImg2 4s ease forwards;
+}
+.story_img2 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+}
+@keyframes storyImg2 {
+  0% { right: -200px; }
+  100% { right: 0px; }
+}
